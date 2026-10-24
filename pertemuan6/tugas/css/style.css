@@ -1,0 +1,298 @@
+:root {
+  --primary: #E52D27;
+  --orange: #F38120;
+  --dark: #5A5D60;
+  --black: #000000;
+  --light: #F9F9F9;
+  --white: #FFFFFF;
+
+  --font-head: Georgia, "Times New Roman", serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --h1: 44px;
+  --h2: 28px;
+  --h3: 20px;
+  --body: 16px;
+  --small: 13px;
+
+  --s1: 8px;
+  --s2: 16px;
+  --s3: 24px;
+  --s4: 40px;
+  --s5: 64px;
+
+  --r-btn: 8px;
+  --r-card: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--body);
+  line-height: 1.6;
+  color: var(--dark);
+  background: var(--light);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-head);
+  line-height: 1.2;
+}
+
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+h3 { font-size: var(--h3); }
+
+.small {
+  font-size: var(--small);
+  color: #666666;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 2px solid transparent;
+  border-radius: var(--r-btn);
+  font-size: var(--body);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #c8231d;
+}
+
+.btn-accent {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.btn-accent:hover {
+  background: #d96f16;
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.btn-outline:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+
+.navbar {
+  background: var(--white);
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--s1);
+  font-family: var(--font-head);
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.menu {
+  display: flex;
+  gap: var(--s3);
+  list-style: none;
+}
+
+.menu a {
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+#toggle, .burger {
+  display: none;
+}
+
+.hero {
+  background: var(--primary);
+  color: var(--white);
+  padding: var(--s5) 0;
+}
+
+.hero p {
+  margin: var(--s2) 0 var(--s3);
+  max-width: 580px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: var(--s2);
+  flex-wrap: wrap;
+}
+
+.content {
+  padding: var(--s5) 0;
+}
+
+.content h2 {
+  margin-bottom: var(--s3);
+  color: var(--dark);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s3);
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid #E0E0E0;
+  border-radius: var(--r-card);
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: var(--s3);
+}
+
+.card-body > * {
+  margin-bottom: var(--s1);
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--primary);
+}
+
+footer {
+  background: var(--dark);
+  color: #D1D5DB;
+  padding: var(--s4) 0;
+  font-size: 14px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--s2);
+}
+
+footer h3 {
+  color: var(--white);
+  font-size: 16px;
+  font-family: var(--font-body);
+  margin-bottom: var(--s1);
+}
+
+.copy {
+  text-align: center;
+  margin-top: var(--s3);
+  font-size: var(--small);
+  border-top: 1px solid #6c7073;
+  padding-top: var(--s2);
+}
+
+@media (max-width: 700px) {
+  :root {
+    --h1: 30px;
+  }
+
+  .burger {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--dark);
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--white);
+    border-bottom: 1px solid #E0E0E0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu a {
+    display: block;
+    padding: 14px 5%;
+  }
+
+  #toggle:checked ~ .menu {
+    display: flex;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-btns .btn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .logo-img {
+    height: 38px;
+  }
+
+  .card-img {
+    height: 180px;
+  }
+}
