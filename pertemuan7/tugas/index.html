@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Event</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Form Registrasi Event IT 2026</h2>
+        <p class="subtitle">Silakan isi data diri Anda dengan benar untuk mendaftar.</p>
+
+        <form action="proses.php" method="post" enctype="multipart/form-data">
+            
+           <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required minlength="3" placeholder="Masukkan nama lengkap">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="nama@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="telepon">Nomor Telepon:</label>
+                <input type="tel" id="telepon" name="telepon" required pattern="^08[0-9]{8,11}$" placeholder="081234567890">
+            </div>
+
+            <div class="form-group">
+                <label for="kategori">Kategori Peserta:</label>
+                <select id="kategori" name="kategori" required>
+                    <option value="">Pilih Kategori</option>
+                    <option value="student">Mahasiswa</option>
+                    <option value="dosen">Dosen</option>
+                    <option value="staf">Staf</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Jenis Tiket:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="tiket" value="regular" required> Regular (Gratis)</label>
+                    <label><input type="radio" name="tiket" value="vip"> VIP (Rp 150.000)</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Sesi Workshop yang Minati:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="workshop" value="ai"> Artificial Intelligence</label>
+                    <label><input type="checkbox" name="workshop" value="se">Software Engineering</label>
+                    <label><input type="checkbox" name="workshop" value="ncs">Networking dan Cybersecurity</label>
+                    <label><input type="checkbox" name="workshop" value="data">Data Science</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="bukti">Kartu Identitas:</label>
+                <input type="file" id="bukti" name="bukti" accept=".jpg, .jpeg, .png, .pdf" required>
+            </div>
+
+            <div class="form-group">
+                <label for="catatan">Catatan:</label>
+                <textarea id="catatan" name="catatan" rows="3" placeholder="Tuliskan catatan jika ada..."></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-submit">Daftar Sekarang</button>
+                <button type="reset" class="btn-reset">Reset Form</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
