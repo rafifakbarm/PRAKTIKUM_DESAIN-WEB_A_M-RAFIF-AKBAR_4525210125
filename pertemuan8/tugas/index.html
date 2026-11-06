@@ -11,7 +11,7 @@
       <section class="form-card">
         <header class="form-header">
           <span class="label-top"> KURSUS MOBILE LEGEND </span>
-          <h1>Form Lamaran Kursus Mobile Legend</h1>
+          <h1>Form  Kursus Mobile Legend</h1>
           <p class="required-info">* Wajib diisi</p>
         </header>
         <!--
@@ -65,8 +65,8 @@ dibutuhkan untuk pengiriman file.
           </div>
           <!-- Posisi -->
           <div class="form-group">
-            <label for="posisi">Jenis Kelamin</label>
-            <select id="posisi" name="posisi" required>
+            <label for="jenis">Jenis Kelamin</label>
+            <select id="jenis" name="jenis" required>
               <option value="">-- Pilih Jenis Kelamin --</option>
               <option value="cowo">Laki-Laki</option>
               <option value="cewe">Perempuan</option>
@@ -74,35 +74,27 @@ dibutuhkan untuk pengiriman file.
           </div>
           <!-- Radio -->
           <fieldset>
-            <legend>Pilih Paket</legend>
+            <legend>Jenis Device</legend>
             <div class="option">
               <input
                 type="radio"
-                id="onsite"
-                name="sistem_kerja"
-                value="onsite"
+                id="andro"
+                name="andro"
+                value="andro"
                 required
               />
-              <label for="onsite"> Standar </label>
+              <label for="onsite"> Android </label>
             </div>
             <div class="option">
               <input
                 type="radio"
-                id="hybrid"
-                name="sistem_kerja"
-                value="hybrid"
+                id="ios"
+                name="ios"
+                value="ios"
               />
-              <label for="hybrid"> VIP </label>
+              <label for="ios"> IOS </label>
             </div>
-            <div class="option">
-              <input
-                type="radio"
-                id="remote"
-                name="sistem_kerja"
-                value="remote"
-              />
-              <label for="remote"> VVIP </label>
-            </div>
+            
             
           </fieldset>
           <!-- Kemampuan -->
@@ -110,47 +102,47 @@ dibutuhkan untuk pengiriman file.
             <legend>Pilih Role</legend>
             <p class="instruction">Bisa lebih dari 1.</p>
             <div class="option">
-              <input type="checkbox" id="html" name="keahlian[]" value="html" />
-              <label for="html"> Jungler </label>
+              <input type="checkbox" id="jung" name="role[]" value="jung" />
+              <label for="jung"> Jungler </label>
             </div>
             <div class="option">
-              <input type="checkbox" id="css" name="keahlian[]" value="css" />
-              <label for="css"> Goldaner </label>
-            </div>
-            <div class="option">
-              <input
-                type="checkbox"
-                id="javascript"
-                name="keahlian[]"
-                value="javascript"
-              />
-              <label for="javascript"> Explaner </label>
+              <input type="checkbox" id="gold" name="role[]" value="gold" />
+              <label for="gold"> Goldaner </label>
             </div>
             <div class="option">
               <input
                 type="checkbox"
-                id="figma"
-                name="keahlian[]"
-                value="figma"
+                id="exp"
+                name="role[]"
+                value="exp"
               />
-              <label for="figma"> Roamer </label>
+              <label for="exp"> Explaner </label>
             </div>
             <div class="option">
               <input
                 type="checkbox"
-                id="figma"
-                name="keahlian[]"
-                value="figma"
+                id="roam"
+                name="role[]"
+                value="roam"
               />
-              <label for="figma"> Midlaner </label>
+              <label for="roam"> Roamer </label>
+            </div>
+            <div class="option">
+              <input
+                type="checkbox"
+                id="mid"
+                name="role[]"
+                value="mid"
+              />
+              <label for="mid"> Midlaner </label>
             </div>
           </fieldset>
           <!-- Textarea -->
           <div class="form-group">
-            <label for="motivasi"> Alasan Mengikuti Kursus Ini * </label>
+            <label for="alasan"> Alasan Mengikuti Kursus Ini * </label>
             <textarea
-              id="motivasi"
-              name="motivasi"
+              id="alasan"
+              name="alasan"
               rows="6"
               minlength="10"
               maxlength="500"
@@ -161,12 +153,12 @@ dibutuhkan untuk pengiriman file.
           </div>
           <!-- Upload Portofolio -->
           <div class="form-group">
-            <label for="portofolio"> Bukti Pembayaran </label>
+            <label for="bukti"> Bukti Pembayaran </label>
             <input
               type="file"
-              id="portofolio"
-              name="portofolio"
-              accept=".pdf,.jpg,.jpeg,.png"
+              id="bukti"
+              name="bukti"
+              accept="pdf"
             />
             <small> Dapat berupa PDF (Max 2MB). </small>
           </div>
