@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Akademik</title>
+  <!-- Bootstrap 5.3.8 via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS sendiri -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+  <!-- HEADER -->
+  <header class="bg-primary text-white py-4">
+    <!-- container: pembungkus utama, membatasi lebar & memberi padding kiri-kanan -->
+    <div class="container">
+      <h1 class="h3 mb-1">Sistem Informasi Akademik</h1>
+      <p class="mb-0">Dashboard Data Mahasiswa</p>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container my-5">
+
+    <!-- Judul + tombol -->
+    <!-- row: baris flex yang menampung kolom-kolom (total 12 kolom per baris) -->
+    <div class="row align-items-center mb-4">
+      <!-- col: menentukan lebar tiap bagian di setiap breakpoint -->
+      <div class="col-12 col-md-8">
+        <h2>Dashboard Akademik</h2>
+        <p class="text-secondary mb-md-0">Ringkasan data mahasiswa semester berjalan.</p>
+      </div>
+      <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+        <button class="btn btn-primary">+ Tambah Mahasiswa</button>
+      </div>
+    </div>
+
+    <!-- 4 STATISTIC CARDS
+         HP (<768px)      : col-12 -> 1 kolom
+         Tablet (>=768px) : col-md-6 -> 2 kolom
+         Laptop (>=992px) : col-lg-3 -> 4 kolom -->
+    <div class="row g-3 mb-4">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <p class="text-secondary mb-1">Total Mahasiswa</p>
+            <h3 class="mb-0">120</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <p class="text-secondary mb-1">Mahasiswa Aktif</p>
+            <h3 class="mb-0 text-success">108</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <p class="text-secondary mb-1">Mahasiswa Cuti</p>
+            <h3 class="mb-0 text-warning">8</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <p class="text-secondary mb-1">Mahasiswa Lulus</p>
+            <h3 class="mb-0 text-primary">4</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TABEL -->
+    <div class="card shadow-sm">
+      <div class="card-header bg-white py-3">
+        <h3 class="h5 mb-0">Data Mahasiswa</h3>
+      </div>
+      <div class="card-body">
+        <!-- table-responsive: tabel bisa digeser horizontal di layar kecil -->
+        <div class="table-responsive">
+          <!-- table-striped: baris belang | table-hover: sorot saat kursor di atas baris -->
+          <table class="table table-striped table-hover align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th>No.</th>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Program Studi</th>
+                <th>Angkatan</th>
+                <th>Status</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td><td>20260001</td><td>Az-Zahra Putri</td><td>Teknik Informatika</td><td>2026</td>
+                <td><span class="badge text-bg-success">Aktif</span></td>
+                <td><button class="btn btn-sm btn-primary">Detail</button></td>
+              </tr>
+              <tr>
+                <td>2</td><td>20260002</td><td>Soja Purnamasari</td><td>Teknik Mesin</td><td>2026</td>
+                <td><span class="badge text-bg-success">Aktif</span></td>
+                <td><button class="btn btn-sm btn-primary">Detail</button></td>
+              </tr>
+              <tr>
+                <td>3</td><td>20260003</td><td>Kevin Khozimah Zaki</td><td>Teknik Elektro</td><td>2026</td>
+                <td><span class="badge text-bg-warning">Cuti</span></td>
+                <td><button class="btn btn-sm btn-primary">Detail</button></td>
+              </tr>
+              <tr>
+                <td>4</td><td>20260004</td><td>Bilqis Muflihunnisa M</td><td>Teknik Informatika</td><td>2026</td>
+                <td><span class="badge text-bg-success">Aktif</span></td>
+                <td><button class="btn btn-sm btn-primary">Detail</button></td>
+              </tr>
+              <tr>
+                <td>5</td><td>20260005</td><td>Aida Fitria</td><td>Teknik Mesin</td><td>2026</td>
+                <td><span class="badge text-bg-success">Aktif</span></td>
+                <td><button class="btn btn-sm btn-primary">Detail</button></td>
+              </tr>
+              <tr>
+                <td>6</td><td>20260006</td><td>Lean Ferdiansyah</td><td>Sistem Informasi</td><td>2026</td>
+                <td><span class="badge text-bg-success">Aktif</span></td>
+                <td><button class="btn btn-sm btn-primary">Detail</button></td>
+              </tr>
+              <tr>
+                <td>7</td><td>20260007</td><td>Alifa Wenny Kurnia Putri</td><td>Teknik Elektro</td><td>2026</td>
+                <td><span class="badge text-bg-warning">Cuti</span></td>
+                <td><button class="btn btn-sm btn-primary">Detail</button></td>
+              </tr>
+              <tr>
+                <td>8</td><td>20260008</td><td>Fitria Dwi Anggraeni</td><td>Teknik Sipil</td><td>2026</td>
+                <td><span class="badge text-bg-success">Aktif</span></td>
+                <td><button class="btn btn-sm btn-primary">Detail</button></td>
+              </tr>
+              <tr>
+                <td>9</td><td>20260009</td><td>Rafif Akbar</td><td>Sistem Informasi</td><td>2026</td>
+                <td><span class="badge text-bg-success">Aktif</span></td>
+                <td><button class="btn btn-sm btn-primary">Detail</button></td>
+              </tr>
+              <tr>
+                <td>10</td><td>20260010</td><td>Akbar Rafif</td><td>Teknik Sipil</td><td>2026</td>
+                <td><span class="badge text-bg-secondary">Lulus</span></td>
+                <td><button class="btn btn-sm btn-primary">Detail</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Sistem Informasi Akademik</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
