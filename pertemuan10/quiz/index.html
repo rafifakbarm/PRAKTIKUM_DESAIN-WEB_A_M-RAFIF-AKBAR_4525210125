@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harmoni Senja Fest 2026</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ======================== NAVBAR ======================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Harmoni Senja Fest</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuUtama"
+          aria-controls="menuUtama"
+          aria-expanded="false"
+          aria-label="Buka navigasi"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuUtama">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#beranda">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lineup">Line-Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tiket">Tiket</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ======================== HERO ======================== -->
+    <header id="beranda" class="hero-section py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-6">
+            <span class="badge custom-badge mb-3">FESTIVAL MUSIK 2026</span>
+            <h1 class="display-5 fw-bold">Harmoni Senja Fest 2026</h1>
+            <p class="lead text-secondary">
+              Nikmati keseruan konser musik tahunan dengan penampil terbaik. 15
+              Desember 2026 di Senora Park, Jakarta.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-2">
+              <button
+                class="btn btn-brand btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#modalTiket"
+              >
+                Beli Tiket Sekarang
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img
+              src="images/konser.jpg"
+              alt="Panggung Konser Musik"
+              class="img-fluid rounded-4 shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ======================== ALERT ======================== -->
+    <section class="container mt-4">
+      <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong>Pengumuman: </strong>
+        Kuota tiket Early Bird terbatas! Segera amankan tiketmu sebelum kehabisan.
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Tutup"
+        ></button>
+      </div>
+    </section>
+
+    <!-- ======================== LINE-UP / KATEGORI ======================== -->
+    <section id="lineup" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-label">LINE-UP UTAMA</span>
+          <h2 class="fw-bold">Penampil Spesial</h2>
+          <p class="text-secondary">Artis papan atas yang siap memeriahkan panggung.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card custom-card h-100">
+              <img src="images/a.jpg" class="card-img-top" alt="Artist 1" />
+              <div class="card-body">
+                <h3 class="h5 card-title">Coldplay</h3>
+                <p class="card-text text-secondary">Panggung Utama - 19:00 WIB</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card custom-card h-100">
+              <img src="images/b.jpg" class="card-img-top" alt="Artist 2" />
+              <div class="card-body">
+                <h3 class="h5 card-title">Oasis</h3>
+                <p class="card-text text-secondary">Panggung Utama - 20:30 WIB</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card custom-card h-100">
+              <img src="images/c.jpg" class="card-img-top" alt="Artist 3" />
+              <div class="card-body">
+                <h3 class="h5 card-title">The Weeknd</h3>
+                <p class="card-text text-secondary">Panggung Utama - 22:00 WIB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== TIKET ======================== -->
+    <section id="tiket" class="bg-light py-5">
+      <div class="container text-center mb-4">
+        <span class="section-label">TIKET KONSER</span>
+        <h2 class="fw-bold">Pilih Kategori Tiketmu</h2>
+      </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-3 text-center">
+              <div class="card-body">
+                <h3>Festival</h3>
+                <h4 class="text-primary fw-bold my-3">Rp 150.000</h4>
+                <p class="text-secondary">Akses area festival umum.</p>
+                <button class="btn btn-outline-brand w-100" data-bs-toggle="modal" data-bs-target="#modalTiket">Beli</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-3 text-center">
+              <div class="card-body">
+                <h3>VIP</h3>
+                <h4 class="text-primary fw-bold my-3">Rp 350.000</h4>
+                <p class="text-secondary">Akses dekat panggung + merchandise.</p>
+                <button class="btn btn-brand w-100" data-bs-toggle="modal" data-bs-target="#modalTiket">Beli</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-3 text-center">
+              <div class="card-body">
+                <h3>VVIP</h3>
+                <h4 class="text-primary fw-bold my-3">Rp 750.000</h4>
+                <p class="text-secondary">Akses eksklusif, meet & greet, lounge.</p>
+                <button class="btn btn-outline-brand w-100" data-bs-toggle="modal" data-bs-target="#modalTiket">Beli</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== KONTAK & FORM ======================== -->
+    <section id="kontak" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <span class="section-label text-center">KONTAK KAMI</span>
+            <h2 class="fw-bold text-center mb-4">Punya Pertanyaan? Kirim Pesan</h2>
+            <form>
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="nama@email.com">
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan / Pertanyaan</label>
+                <textarea class="form-control" id="pesan" rows="4" placeholder="Tulis pesan Anda di sini..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-brand w-100">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer class="custom-footer py-4">
+      <div class="container text-center">
+        <p class="mb-1">&copy; 2026 Harmoni Senja Fest. Hak Cipta Dilindungi.</p>
+        <p class="text-muted small mb-0">Instagram: @harmonisenjafest | Twitter: @harmonisenja</p>
+      </div>
+    </footer>
+
+    <!-- ======================== MODAL ======================== -->
+    <div
+      class="modal fade"
+      id="modalTiket"
+      tabindex="-1"
+      aria-labelledby="judulModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="judulModal">Syarat & Ketentuan Tiket</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Tiket yang sudah dibeli tidak dapat dikembalikan. Harap membawa identitas diri resmi saat penukaran tiket di lokasi konser.
+            </p>
+            <div class="alert alert-warning mb-0">
+              Pastikan melakukan pembayaran sebelum batas waktu habis.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <button type="button" class="btn btn-brand" data-bs-dismiss="modal">
+              Konfirmasi & Pesan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

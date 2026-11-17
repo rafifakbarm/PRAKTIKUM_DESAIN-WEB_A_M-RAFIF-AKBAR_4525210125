@@ -1,0 +1,132 @@
+/* ========================
+   CUSTOM THEME / DESIGN TOKENS
+   ======================== */
+:root {
+  --brand-primary: #581c87; /* Nuansa senja/ungu elegan */
+  --brand-primary-dark: #3b0764;
+  --brand-accent: #f59e0b;
+  --brand-light: #fdf4ff;
+  --brand-text: #1f2937;
+  --brand-muted: #4b5563;
+  --brand-radius: 12px;
+}
+
+body {
+  color: var(--brand-text);
+  line-height: 1.7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========================
+   NAVBAR
+   ======================== */
+.custom-navbar {
+  background-color: var(--brand-primary);
+}
+
+.custom-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: white;
+}
+
+/* ========================
+   HERO
+   ======================== */
+.hero-section {
+  background-color: var(--brand-light);
+}
+
+.custom-badge {
+  background-color: var(--brand-accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ========================
+   BUTTON
+   ======================== */
+.btn-brand {
+  background-color: var(--brand-primary);
+  border-color: var(--brand-primary);
+  color: white;
+}
+
+.btn-brand:hover {
+  background-color: var(--brand-primary-dark);
+  border-color: var(--brand-primary-dark);
+  color: white;
+}
+
+.btn-outline-brand {
+  background-color: transparent;
+  border: 1px solid var(--brand-primary);
+  color: var(--brand-primary);
+}
+
+.btn-outline-brand:hover {
+  background-color: var(--brand-primary);
+  color: white;
+}
+
+/* ========================
+   HEADING & LABELS
+   ======================== */
+.section-label {
+  display: block;
+  color: var(--brand-primary);
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+/* ========================
+   CARD
+   ======================== */
+.custom-card {
+  border: 1px solid #e5e7eb;
+  border-radius: var(--brand-radius);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ========================
+   FOOTER
+   ======================== */
+.custom-footer {
+  background-color: var(--brand-primary-dark);
+  color: white;
+}
+
+/* Responsive typography */
+.hero-section h1 {
+  font-size: 2.1rem;
+}
+
+@media (min-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-section h1 {
+    font-size: 3.2rem;
+  }
+}
